@@ -1,1 +1,1 @@
-web:    java -cp target/classes:target/dependency/* com.ezrebclan.firstWebApp.Main
+web:    java -cp /target/classes com.ezrebclan.firstWebApp.Main
