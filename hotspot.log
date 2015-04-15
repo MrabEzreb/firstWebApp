@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hotspot_log version='160 1' process='6192' time_ms='1429122817179'>
+<vm_version>
+<name>
+Java HotSpot(TM) 64-Bit Server VM
+</name>
+<release>
+17.0-b05-fastdebug
+</release>
+<info>
+Java HotSpot(TM) 64-Bit Server VM (17.0-b05-fastdebug) for windows-amd64 JRE (1.7.0-ea-fastdebug-b76), built on Nov 12 2009 01:51:45 by &quot;java_re&quot; with MS VC++ 8.0 (VS2005)
+</info>
+</vm_version>
+<vm_arguments>
+<args>
+-Dfile.encoding=Cp1252 
+</args>
+<command>
+com.ezrebclan.firstWebApp.Main
+</command>
+<launcher>
+SUN_STANDARD
+</launcher>
+<properties>
+java.vm.specification.version=1.0
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Sun Microsystems Inc.
+java.vm.version=17.0-b05-fastdebug
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+java.vm.vendor=Sun Microsystems Inc.
+java.vm.info=mixed mode, sharing
+java.ext.dirs=C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+java.endorsed.dirs=C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\lib\endorsed
+sun.boot.library.path=C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\bin
+java.library.path=C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre7/bin/client;C:/Program Files (x86)/Java/jre7/bin;C:/Program Files (x86)/Java/jre7/lib/i386;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Lenovo Fingerprint Reader\;C:\Program Files\Lenovo Fingerprint Reader\x86\;C:\Program Files\Lenovo Fingerprint Reader\;C:\Program Files\Lenovo Fingerprint Reader\x86\;C:\Program Files\Lenovo Fingerprint Reader\;C:\Program Files\Lenovo Fingerprint Reader\x86\;.\Common\Libraries;E:\KidsRuby\Git\cmd;C:\Users\bram.zerbe\KidsRuby\Git\cmd;C:\Users\bram.zerbe\AppData\Local\Google\Chrome\Application;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Lenovo Fingerprint Reader\;C:\Program Files\Lenovo Fingerprint Reader\x86\;C:\Program Files\Lenovo Fingerprint Reader\;C:\Program Files\Lenovo Fingerprint Reader\x86\;C:\Program Files\Lenovo Fingerprint Reader\;C:\Program Files\Lenovo Fingerprint Reader\x86\;.\Common\Libraries;C:\Users\bram.zerbe\AppData\Local\Programs\Git\cmd;C:\Users\bram.zerbe\AppData\Local\Spoon\Cmd;C:\Users\bram.zerbe\Desktop\eclipse;
+java.home=C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre
+java.class.path=C:\Users\bram.zerbe\Desktop\Programming\firstWebApp\target\classes;C:\Users\bram.zerbe\.m2\repository\org\eclipse\jetty\jetty-servlet\7.6.0.v20120127\jetty-servlet-7.6.0.v20120127.jar;C:\Users\bram.zerbe\.m2\repository\org\eclipse\jetty\jetty-security\7.6.0.v20120127\jetty-security-7.6.0.v20120127.jar;C:\Users\bram.zerbe\.m2\repository\org\eclipse\jetty\jetty-server\7.6.0.v20120127\jetty-server-7.6.0.v20120127.jar;C:\Users\bram.zerbe\.m2\repository\org\eclipse\jetty\jetty-continuation\7.6.0.v20120127\jetty-continuation-7.6.0.v20120127.jar;C:\Users\bram.zerbe\.m2\repository\org\eclipse\jetty\jetty-http\7.6.0.v20120127\jetty-http-7.6.0.v20120127.jar;C:\Users\bram.zerbe\.m2\repository\org\eclipse\jetty\jetty-io\7.6.0.v20120127\jetty-io-7.6.0.v20120127.jar;C:\Users\bram.zerbe\.m2\repository\org\eclipse\jetty\jetty-util\7.6.0.v20120127\jetty-util-7.6.0.v20120127.jar;C:\Users\bram.zerbe\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\bram.zerbe\.m2\repository\postgresql\postgresql\9.0-801.jdbc4\postgre

@@ -37,15 +37,15 @@ public class ScriptElement extends HTMLElement {
 
 	@Override
 	public String toHTML() {
-		String html = "";
+		String html = "<script>\n";
 		for (int i = 0; i < this.functions.length; i++) {
 			if(i == 0) {
-				html = this.functions[i].toString()+"\n";
+				html += this.functions[i].toString()+"\n";
 			} else {
 				html += this.functions[i].toString()+"\n";
 			}
 		}
-		html += "\n"+this.autorun;
+		html += this.autorun+"\n</script>";
 		return html;
 	}
 
