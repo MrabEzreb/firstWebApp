@@ -5,6 +5,7 @@ public abstract class HTMLElement {
 	private String id;
 	private String className;
 	private String[] classNames;
+	private HTMLElement[] children = new HTMLElement[0];
 	
 	/**
 	 * @return the id
@@ -25,6 +26,20 @@ public abstract class HTMLElement {
 	 */
 	public String getClassName() {
 		return className;
+	}
+
+	/**
+	 * @return the children
+	 */
+	public HTMLElement[] getChildren() {
+		return children;
+	}
+
+	/**
+	 * @param children the children to set
+	 */
+	public void setChildren(HTMLElement[] children) {
+		this.children = children;
 	}
 
 	/**
@@ -74,6 +89,13 @@ public abstract class HTMLElement {
 	 */
 	public void setClassNames(String[] classNames) {
 		this.classNames = classNames;
+		String className = "";
+		String space = "";
+		for (String string : classNames) {
+			className += space+string;
+			space = " ";
+		}
+		this.className = className;
 	}
 
 	public abstract String toHTML();
