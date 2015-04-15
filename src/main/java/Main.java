@@ -18,7 +18,7 @@ public class Main extends HttpServlet {
     if (req.getRequestURI().endsWith("/db")) {
       showDatabase(req,resp);
     } else if(req.getRequestURI().endsWith("/love")) {
-    	
+    	showSignup(req, resp);
   	} else {
       showHome(req,resp);
     }
