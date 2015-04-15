@@ -68,8 +68,8 @@ public class Main extends HttpServlet {
   
   private void showSignup(HttpServletRequest req, HttpServletResponse resp)
 	      throws ServletException, IOException {
-	  resp.getWriter().print("Hello from Java!");
-	  resp.getWriter().print("This is so freakin cool! I LOVE JAVA!");
+	  resp.getWriter().print("<p>Hello from Java!</p>");
+	  resp.getWriter().print("<h1>This is so freakin cool! I LOVE JAVA!</h1>");
   }
 
   public static void main(String[] args) throws Exception {
