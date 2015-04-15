@@ -1,8 +1,11 @@
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
+
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.*;
+
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.*;
@@ -14,7 +17,9 @@ public class Main extends HttpServlet {
 
     if (req.getRequestURI().endsWith("/db")) {
       showDatabase(req,resp);
-    } else {
+    } else if(req.getRequestURI().endsWith("/love")) {
+    	
+  	} else {
       showHome(req,resp);
     }
   }
@@ -59,6 +64,12 @@ public class Main extends HttpServlet {
     String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ":" + port + dbUri.getPath();
 
     return DriverManager.getConnection(dbUrl, username, password);
+  }
+  
+  private void showSignup(HttpServletRequest req, HttpServletResponse resp)
+	      throws ServletException, IOException {
+	  resp.getWriter().print("Hello from Java!");
+	  resp.getWriter().print("This is so freakin cool! I LOVE JAVA!");
   }
 
   public static void main(String[] args) throws Exception {
