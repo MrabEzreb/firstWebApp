@@ -1,3 +1,4 @@
+package com.ezrebclan.firstWebApp;
 
 public enum Pages {
 	
