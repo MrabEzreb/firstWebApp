@@ -29,6 +29,8 @@ public class Main extends HttpServlet {
 			for (String string : ips2) {
 				resp.getWriter().println(string+"<br>");
 			}
+		} else if(req.getRequestURI().endsWith("/php")) {
+			showPHP();
 		} else {
 		    showHome(req,resp);
 		}
