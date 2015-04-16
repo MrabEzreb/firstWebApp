@@ -94,7 +94,7 @@ public class Main extends HttpServlet {
 	      throws ServletException, IOException {
 	  resp.getWriter().print("<p>Hello from Java!</p>");
 	  resp.getWriter().print("<h1>This is so freakin cool! I LOVE JAVA!</h1>");
-	  resp.getWriter().print("<?php echo \"hello\";");
+	  resp.getWriter().print("<?php echo \"hello\";?>");
   }
 
   public static void main(String[] args) throws Exception {
