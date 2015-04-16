@@ -30,7 +30,7 @@ public class Main extends HttpServlet {
 				resp.getWriter().println(string+"<br>");
 			}
 		} else if(req.getRequestURI().endsWith("/php")) {
-			showPHP();
+			showPHP(req, resp);
 		} else {
 		    showHome(req,resp);
 		}
