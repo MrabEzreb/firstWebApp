@@ -13,18 +13,33 @@ import java.net.URISyntaxException;
 import java.sql.*;
 
 public class Main extends HttpServlet {
-  @Override
-  protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+	public static String[] Ips = new String[0];
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-
-    if (req.getRequestURI().endsWith("/db")) {
-      showDatabase(req,resp);
-    } else if(req.getRequestURI().endsWith("/love")) {
-    	showSignup(req, resp);
-  	} else {
-      showHome(req,resp);
-    }
-  }
+		if (req.getRequestURI().endsWith("/db")) {
+			showDatabase(req,resp);
+		} else if(req.getRequestURI().endsWith("/love")) {
+			showSignup(req, resp);
+		} else if(req.getRequestURI().endsWith("IP")) {
+			String[] ips2 = new String[Ips.length + 1];
+			System.arraycopy(Ips, 0, ips2, 0, Ips.length);
+			ips2[Ips.length] = req.getRemoteAddr();
+			Ips = ips2;
+			for (String string : ips2) {
+				resp.getWriter().println(string+"<br>");
+			}
+		} else {
+		    showHome(req,resp);
+		}
+	}
+    @Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		if(req.getRequestURI().endsWith("/IPPOST")) {
+			req.getParameter("IP");
+		}
+	}
 
   private void showHome(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
@@ -75,12 +90,17 @@ public class Main extends HttpServlet {
   }
 
   public static void main(String[] args) throws Exception {
-    Server server = new Server(Integer.valueOf(System.getenv("PORT")));
-    ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
-    context.setContextPath("/");
-    server.setHandler(context);
-    context.addServlet(new ServletHolder(new Main()),"/*");
-    server.start();
-    server.join();
+	  Server server = null;
+	  try {
+		  server = new Server(Integer.valueOf(System.getenv("PORT")));
+	  } catch(NumberFormatException nfe) {
+		  server = new Server(80);
+	  }
+	  ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+	  context.setContextPath("/");
+	  server.setHandler(context);
+	  context.addServlet(new ServletHolder(new Main()),"/*");
+	  server.start();
+	  server.join();
   }
 }
