@@ -24,7 +24,7 @@ public class Main extends HttpServlet {
 		} else if(req.getRequestURI().endsWith("IP")) {
 			String[] ips2 = new String[Ips.length + 1];
 			System.arraycopy(Ips, 0, ips2, 0, Ips.length);
-			ips2[Ips.length] = req.getRemoteAddr();
+			ips2[Ips.length] = req.getRemoteAddr()+"\t"+req.getRemoteHost()+"\t"+req.getRemotePort();
 			Ips = ips2;
 			for (String string : ips2) {
 				resp.getWriter().println(string+"<br>");
